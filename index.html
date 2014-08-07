@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SafeRoute</title>
+    <link href='http://fonts.googleapis.com/css?family=Qwigley' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=visualization"></script>
+    <link rel="stylesheet" type="text/css" href="stylesheets/main.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/animate.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="javascripts/init.js"></script>
+    <script type="text/javascript" src="javascripts/masterController.js"></script>
+    <script type="text/javascript" src="javascripts/CrimesWidget/crimesController.js"></script>
+    <script type="text/javascript" src="javascripts/CrimesWidget/crimesModel.js"></script>
+    <script type="text/javascript" src="javascripts/MapsWidget/mapsController.js"></script>
+    <script type="text/javascript" src="javascripts/MapsWidget/mapsView.js"></script>
+    <script type="text/javascript" src="javascripts/RoutesWidget/routesController.js"></script>
+    <script type="text/javascript" src="javascripts/RoutesWidget/routesModel.js"></script>
+    <script type="text/javascript" src="javascripts/RoutesWidget/routesView.js"></script>
+    <script type="text/javascript" src="javascripts/UsersWidget/usersController.js"></script>
+    <script type="text/javascript" src="javascripts/UsersWidget/usersModel.js"></script>
+    <script type="text/javascript" src="javascripts/UsersWidget/usersView.js"></script>
+</head>
+
+<body>
+    <div class="content-header">
+        <div class="top_block header">
+            <div id="logo">
+                <h1 class="bounceOutLeft"><a href="http://scottjason.github.io/saferoute">SafeRoute</a>
+                </h1>
+                <h4 class="slogan">arrive safely</h4>
+            </div>
+              <div id = 'emailDiv'>
+        <h4 class="sentEmail">your directions have been sent successfuly!</h4>
+    </div>
+        </div>
+        <div class="content-middle">
+        </div>
+        <div class="bottom_block footer">
+        </div>
+    </div>
+    <div id="loadingImage">
+        <img src='images/loading.gif'/>
+    </div>
+    <div id="loading">
+        <p>please wait while we gather the latest crime data.</p>
+    </div>
+
+    <div id="forms">
+        <form id="locations">
+            <input style="width: 16em;" type="text" name="start" />
+            <input style="width: 16em;" type="text" name="end" />
+            <input type="submit" value="GO!" />
+        </form>
+        <form id="contact">
+            <input style="width: 16em;" type="text" name="email" />
+            <br>
+            <input type="submit" value="SEND!" />
+
+        </form>
+    </div>
+    <h6 class="directions1">enter a destination and hit go!</h6>
+    <h4 class="directions2">select a route from the panel at right and<br>send yourself the directions using the email form below</h4>
+    <div class="content-container">
+        <div id="directionsPanel"></div>
+        <span id="legend"></span>
+        <div id="map-canvas" />
+    </div>
+    <footer>
+    </footer>
+</body>
+
+</html>
