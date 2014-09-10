@@ -7,6 +7,7 @@ A single-page web application that provides three routes to any destination: the
 My Contributions:
 
 Designed the JavaScript architecture.
+<br>
 Decoupled and implemented the features. 
 
 Created a maintainable application which enabled seamless expansion to the codebase.
